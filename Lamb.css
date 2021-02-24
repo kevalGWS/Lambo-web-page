@@ -1,0 +1,78 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.clear {
+  clear: both;
+}
+a {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+img {
+  height: 12rem;
+}
+nav {
+  background: black;
+  height: 12rem;
+}
+nav h1 {
+  float: left;
+}
+nav ul {
+  float: right;
+  list-style: none;
+}
+nav li {
+  float: left;
+  margin: 5rem 9rem;
+  padding-top: 0rem;
+}
+.sec1 {
+  background-image: url(/lambo/pexels-adrian-dorobantu-2127733.jpg);
+  height: 80rem;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: rgb(245, 245, 245);
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+.sec1 h1 {
+  padding-top: 18rem;
+  font-size: 9rem;
+}
+.sec1 h2 {
+  font-size: 6rem;
+  padding-top: 20rem;
+}
+.sec1 h3 {
+  font-size: 4rem;
+  padding-top: 3rem;
+}
+
+.form-sec {
+  text-align: center;
+  font-size: 5rem;
+}
+
+form input,
+form label,
+form textarea {
+  display: block;
+  font-size: 3rem;
+  padding: 1rem;
+}
+form input,
+form textarea {
+  margin: 2rem auto;
+}
+form button {
+  padding: 2rem 4rem;
+  font-size: 3rem;
+  margin-top: 2rem;
+}

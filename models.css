@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: rosavir;
+  src: url(/lambo/Fonts/Rosarivo/Rosarivo-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(/lambo/Fonts/Roboto/Roboto-Regular.ttf);
+}
+body {
+  font-family: rosavir;
+}
+.models {
+  color: white;
+  background: radial-gradient(rgba(36, 113, 204, 1), rgba(0, 0, 0, 1));
+}
+nav {
+  position: relative;
+
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px;
+}
+nav img {
+  height: 3rem;
+  position: absolute;
+  background: red;
+  right: 0%;
+}
+.nav ul {
+  list-style: none;
+}
+.page1,
+.page2,
+.page3,
+.page4 {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+.photo {
+  height: 500px;
+  overflow: hidden;
+  align-self: center;
+  justify-self: center;
+}
+.photo img {
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+.model-up {
+  transform: translate(10%, 0%);
+}
+.photo:hover .model-up {
+  transform: translate(0%, 0%);
+}
+.model-down {
+  transform: translate(-10%, 0%);
+}
+.photo:hover .model-down {
+  transform: translate(0%, 0%);
+}
+.Heading {
+  font-size: 1.5rem;
+  grid-column: 2/4;
+  align-self: center;
+}
+.Heading h2 {
+  font-size: 1.2rem;
+}
+.details {
+  font-size: 1.1rem;
+  grid-column: 2/3;
+  align-self: end;
+  text-decoration: none;
+}
+.pages {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pages div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pages h3 {
+  font-size: 20px;
+  padding: 30px;
+}
+.pages svg {
+  cursor: pointer;
+  opacity: 0.5;
+  transform: scale(1);
+}
+.pages svg:hover {
+  animation: dot 0.5s ease-in-out infinite alternate;
+}
+.pages svg.active {
+  opacity: 1;
+}
+@keyframes dot {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
